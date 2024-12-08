@@ -1,0 +1,45 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #85c1e9, #3498db);
+  color: white;
+  text-align: center;
+}
+.weather-container {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  text-align: center;
+}
+.temperature {
+  font-size: 2rem;
+  margin: 10px 0;
+  color: bisque;
+}
+.search-container input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 70%;
+  margin-right: 10px;
+}
+.search-container button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2980b9;
+  color: white;
+  cursor: pointer;
+}
+.search-container button:hover {
+  background-color: #21618c;
+}
+.spinner-border{
+    margin-top: 20px;
+}
