@@ -13,14 +13,15 @@ const searchData = async () => {
   console.log(input.value);
   const fetchData = await fetch(api);
   const response = await fetchData.json();
-  showData(response);
-    input.value = "";
+  response.cod === 200
+    ? showData(response)
+    : (spin.innerHTML = `<h2>Not Found: ${response.cod}</h2>`);
+  input.value = "";
 };
 
 function showData(data) {
   const weatherData = document.getElementById("showWeather");
 
-  console.log(data);
   weatherData.innerHTML = `
    
   <img id="weather-icon" class="icon" src="${`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}" alt="Weather Icon">
